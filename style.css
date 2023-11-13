@@ -1,0 +1,110 @@
+body {
+    background-color: purple;
+    text-align: center;
+    color: white;
+    transition: background-color 1.5s;
+
+
+}
+
+h1 {
+    margin: 1.1em;
+    transition: all 0.8s;
+    font-size: 4em;
+}
+
+img {
+    height: 150px;
+    display: block;
+}
+
+
+button {
+    padding: 1.1em 2.2em;
+    font-size: large;
+
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    margin: 7.1em;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+
+    background-color: black;
+    color: white;
+}
+
+
+
+.container {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+#hand {
+    margin-top: -30px;
+}
+
+.container #disc {
+
+    height: 200px;
+    position: absolute;
+    /* Use absolute positioning */
+    top: 35%;
+    /* Position from the top */
+    left: 40%;
+    /* Position from the left */
+
+
+
+    margin-left: -200px;
+    transform: rotate(30deg);
+    margin-top: -40px;
+
+
+
+}
+
+
+
+
+.animate {
+    animation: mymove 2s infinite alternate;
+}
+
+.pics {
+    margin: -1.1em 1.5em 5em 0;
+
+}
+
+@keyframes mymove {
+    0% {
+        transform: rotate(30deg);
+    }
+
+
+
+    /* 50% {
+        transform: rotate(0deg);
+        margin-top: -20px;
+        margin-left: -200px;
+    } */
+
+    100% {
+        transform: rotate(-30deg);
+        margin-top: 90px;
+        margin-left: -100px;
+
+    }
+}
